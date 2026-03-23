@@ -28,7 +28,7 @@ function buildSystemPrompt(items) {
     dependencies: it.dependencies,
     keyResult: it.keyResult || "",
   }));
-  return `You are the StratAlign AI Assist — a dedicated strategic intelligence bot for this tenant's transformation portfolio.
+  return `You are the Strat101.com AI Assist — a dedicated strategic intelligence bot for this tenant's transformation portfolio.
 
 You have full read access to the tenant's live item registry, which contains ${items.length} items structured in a 9-level hierarchy:
 Vision → Mission → Goal → OKR → Key Result → Initiative → Program → Project → Task → Subtask
@@ -103,7 +103,7 @@ function BotPanel({ items }) {
             <span style={{ fontSize: 16 }}>🤖</span>
           </div>
           <div>
-            <div style={{ fontSize:14, fontWeight:700, color:'#0c2d4a' }}>StratAlign AI Assist</div>
+            <div style={{ fontSize:14, fontWeight:700, color:'#0c2d4a' }}>Strat101.com AI Assist</div>
             <div style={{ fontSize:11, color:'#1a5276' }}>Powered by Claude · {items.length} items in context</div>
           </div>
         </div>
@@ -895,15 +895,15 @@ const SEED = [
 
 // ─── LOGIN SCREEN ─────────────────────────────────────────────────────────────
 function LoginScreen({onLogin}){
-  const [uid,setUid]=useState('Stratalign');
-  const [pwd,setPwd]=useState('Stratalign.1');
+  const [uid,setUid]=useState('Strat101.com');
+  const [pwd,setPwd]=useState('Strat101.com.1');
   const [err,setErr]=useState('');
   const [loading,setLoading]=useState(false);
 
   const attempt=()=>{
     setErr('');setLoading(true);
     setTimeout(()=>{
-      if(uid.trim()==='Stratalign'&&pwd==='Stratalign.1'){onLogin(uid.trim());}
+      if(uid.trim()==='raviboorla'&&pwd==='strat101.1'){onLogin(uid.trim());}
       else{setErr('Invalid User ID or Password. Please try again.');setLoading(false);}
     },900);
   };
@@ -923,7 +923,7 @@ function LoginScreen({onLogin}){
           color:'white',fontWeight:900,fontSize:14,boxShadow:'0 4px 12px rgba(37,99,235,0.5)',
         }}>SA</div>
         <div>
-          <div style={{color:'#0c2040',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>StratAlign</div>
+          <div style={{color:'#0c2040',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
           <div style={{color:'#1a3a6e',fontSize:9,letterSpacing:'0.1em',marginTop:2}}>ENABLING TRANSFORMATION</div>
         </div>
       </div>
@@ -946,7 +946,7 @@ function LoginScreen({onLogin}){
               Transform strategy<br/>into <span style={{color:'#60a5fa'}}>execution</span>
             </h1>
             <p style={{color:'#94a3b8',fontSize:14,lineHeight:1.7,maxWidth:400,marginBottom:32}}>
-              StratAlign connects vision to delivery — linking OKRs, programmes, projects and tasks in a single intelligent workspace powered by AI.
+              Strat101.com connects vision to delivery — linking OKRs, programmes, projects and tasks in a single intelligent workspace powered by AI.
             </p>
             <div style={{display:'flex',gap:20,flexWrap:'wrap'}}>
               {[['🔭','Vision to Subtask'],['🤖','AI Assist'],['📊','Live Reports'],['🗂️','Kanban Boards']].map(([icon,label])=>(
@@ -976,7 +976,7 @@ function LoginScreen({onLogin}){
                 boxShadow:'0 8px 24px rgba(37,99,235,0.45)',
               }}>SA</div>
               <div style={{color:'white',fontWeight:700,fontSize:18}}>Welcome back</div>
-              <div style={{color:'#64748b',fontSize:12,marginTop:4}}>Sign in to your StratAlign workspace</div>
+              <div style={{color:'#64748b',fontSize:12,marginTop:4}}>Sign in to your Strat101.com workspace</div>
             </div>
 
             <div style={{marginBottom:14}}>
@@ -1037,11 +1037,11 @@ function LoginScreen({onLogin}){
 
       {/* Footer */}
       <div style={{padding:'14px 32px',background:'#a3bbff',borderTop:'1px solid #7a9ee8',display:'flex',justifyContent:'center',alignItems:'center',gap:16}}>
-        <span style={{color:'#0c2040',fontSize:11,fontWeight:600}}>®StratAlign</span>
+        <span style={{color:'#0c2040',fontSize:11,fontWeight:600}}>®Strat101.com</span>
         <span style={{color:'#4a6a9e'}}>|</span>
         <span style={{color:'#0c2040',fontSize:11}}>©Copyright 2026. All rights Reserved.</span>
         <span style={{color:'#4a6a9e'}}>|</span>
-        <a href="mailto:Support@Stratalign.com" style={{color:'#0c2040',fontSize:11,textDecoration:'none',fontWeight:600}}>Support@Stratalign.com</a>
+        <a href="mailto:Support@Strat101.com" style={{color:'#0c2040',fontSize:11,textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
       </div>
     </div>
   );
@@ -1159,7 +1159,7 @@ function AppMain({loggedUser}){
       {/* ── COPYRIGHT STRIP ── */}
       <footer style={{background:'#a3bbff',borderTop:'1px solid #7a9ee8',padding:'3px 16px',display:'flex',alignItems:'center',justifyContent:'center',gap:12,flexShrink:0}}>
         <span style={{fontSize:11,color:'#0c2d4a',letterSpacing:'0.02em'}}>
-          ®StratAlign  |  ©Copyright 2026. All rights Reserved.  |  Contact: <a href="mailto:Support@Stratalign.com" style={{color:'#0c2d4a',textDecoration:'none',fontWeight:600}}>Support@Stratalign.com</a>
+          ®Strat101.com  |  ©Copyright 2026. All rights Reserved.  |  Contact: <a href="mailto:Support@Strat101.com" style={{color:'#0c2d4a',textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
         </span>
       </footer>
 
@@ -1387,7 +1387,7 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
             boxShadow:'0 2px 6px rgba(37,99,235,0.3)',
           }}>SA</div>
           {!isMobile&&<div>
-            <div style={{fontWeight:900,fontSize:14,color:'#0c2d4a',letterSpacing:'-0.3px',lineHeight:1}}>StratAlign</div>
+            <div style={{fontWeight:900,fontSize:14,color:'#0c2d4a',letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
             <div style={{fontSize:8,color:'#1a5276',letterSpacing:'0.04em',marginTop:1}}>ENABLING TRANSFORMATION</div>
           </div>}
         </div>
@@ -1552,7 +1552,7 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
         background:'#8ca8f0',borderTop:'1px solid #7a9ee8',
         padding:'3px 14px',display:'flex',alignItems:'center',gap:6,
       }}>
-        <span style={{fontSize:11,color:'#0c3d6e'}}>StratAlign</span>
+        <span style={{fontSize:11,color:'#0c3d6e'}}>Strat101.com</span>
         <span style={{fontSize:11,color:'#0e5280'}}>›</span>
         <span style={{fontSize:11,fontWeight:600,color:'#051e36'}}>
           {view==='kanban'?'🗂️ Kanban Board':view==='reports'?'📈 Report Builder':view==='bot'?'🤖 AI Assist':isWI?(workItemFilter==='all'?'📦 All Work Items':`${TC[workItemFilter]?.i} ${TC[workItemFilter]?.l}s`):`${TC[view]?.i} ${TC[view]?.l}s`}
@@ -2622,7 +2622,7 @@ function openPDF(result,rtype,grpBy){
     bodyHtml=`<h3 style="margin-bottom:16px;color:#374151">Grouped by: <em>${grpBy}</em> | Total: <strong>${result.total}</strong></h3><table style="width:100%"><tbody>${bars}</tbody></table>`;
   }
   const rtypeLabel=rtype==='list'?'📋 List Report':rtype==='count'?'🔢 Count Report':'📊 Histogram Report';
-  const html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>StratAlign Report</title><style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;padding:32px;color:#1f2937}.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #87ceeb;padding-bottom:16px;margin-bottom:24px}.logo{font-size:22px;font-weight:900;color:#0c2d4a}.subtitle{font-size:13px;color:#6b7280;margin-top:4px}.meta{text-align:right;font-size:12px;color:#6b7280}.rtype{font-size:16px;font-weight:700;color:#111827;margin-bottom:20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-size:12px}th{background:#f0f9ff;font-weight:600;color:#0c2d4a;text-transform:uppercase;font-size:11px;letter-spacing:.04em}tr:nth-child(even)td{background:#f9fafb}.no-print{margin-top:24px;text-align:center}button{background:#0c2d4a;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600}button:hover{background:#1a5276}@media print{.no-print{display:none}body{padding:16px}}</style></head><body><div class="header"><div><div class="logo">SA StratAlign</div><div class="subtitle">Strategy Execution · Report Export</div></div><div class="meta">Generated: ${new Date().toLocaleString()}</div></div><div class="rtype">${rtypeLabel}</div>${bodyHtml}<div class="no-print"><button onclick="window.print()">🖨️ Print / Save as PDF</button></div></body></html>`;
+  const html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>Strat101.com Report</title><style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;padding:32px;color:#1f2937}.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #87ceeb;padding-bottom:16px;margin-bottom:24px}.logo{font-size:22px;font-weight:900;color:#0c2d4a}.subtitle{font-size:13px;color:#6b7280;margin-top:4px}.meta{text-align:right;font-size:12px;color:#6b7280}.rtype{font-size:16px;font-weight:700;color:#111827;margin-bottom:20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-size:12px}th{background:#f0f9ff;font-weight:600;color:#0c2d4a;text-transform:uppercase;font-size:11px;letter-spacing:.04em}tr:nth-child(even)td{background:#f9fafb}.no-print{margin-top:24px;text-align:center}button{background:#0c2d4a;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600}button:hover{background:#1a5276}@media print{.no-print{display:none}body{padding:16px}}</style></head><body><div class="header"><div><div class="logo">SA Strat101.com</div><div class="subtitle">Strategy Execution · Report Export</div></div><div class="meta">Generated: ${new Date().toLocaleString()}</div></div><div class="rtype">${rtypeLabel}</div>${bodyHtml}<div class="no-print"><button onclick="window.print()">🖨️ Print / Save as PDF</button></div></body></html>`;
   // Try popup first, fall back to data URI new tab
   const w=window.open('','_blank');
   if(w){w.document.write(html);w.document.close();}
