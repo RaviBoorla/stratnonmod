@@ -895,8 +895,8 @@ const SEED = [
 
 // ─── LOGIN SCREEN ─────────────────────────────────────────────────────────────
 function LoginScreen({onLogin}){
-  const [uid,setUid]=useState('Strat101.com');
-  const [pwd,setPwd]=useState('Strat101.com.1');
+  const [uid,setUid]=useState('raviboorla');
+  const [pwd,setPwd]=useState('Strat101.1');
   const [err,setErr]=useState('');
   const [loading,setLoading]=useState(false);
 
