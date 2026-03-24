@@ -333,8 +333,8 @@ function LoginScreen({onLogin}){
           color:'white',fontWeight:900,fontSize:14,boxShadow:'0 4px 12px rgba(37,99,235,0.5)',
         }}>SA</div>
         <div>
-          <div style={{color:'#0c2040',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
-          <div style={{color:'#1a3a6e',fontSize:9,letterSpacing:'0.1em',marginTop:2}}>ENABLING TRANSFORMATION JOURNEYS</div>
+          <div style={{color:'#FFFFFF',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
+          <div style={{color:'#FFFFFF',fontSize:9,letterSpacing:'0.1em',marginTop:2}}>ENABLING TRANSFORMATION JOURNEYS</div>
         </div>
       </div>
 
@@ -446,12 +446,12 @@ function LoginScreen({onLogin}){
       </div>
 
       {/* Footer */}
-      <div style={{padding:'14px 32px',background:'#a3bbff',borderTop:'1px solid #7a9ee8',display:'flex',justifyContent:'center',alignItems:'center',gap:16}}>
-        <span style={{color:'#0c2040',fontSize:11,fontWeight:600}}>®Strat101.com</span>
+      <div style={{padding:'14px 32px',background:'#192E49',borderTop:'1px solid #7a9ee8',display:'flex',justifyContent:'center',alignItems:'center',gap:16}}>
+        <span style={{color:'#FFFFFF',fontSize:11,fontWeight:600}}>®Strat101.com</span>
         <span style={{color:'#4a6a9e'}}>|</span>
-        <span style={{color:'#0c2040',fontSize:11}}>©Copyright 2026. All rights Reserved.</span>
+        <span style={{color:'#FFFFFF',fontSize:11}}>©Copyright 2026. All rights Reserved.</span>
         <span style={{color:'#4a6a9e'}}>|</span>
-        <a href="mailto:Support@Strat101.com" style={{color:'#0c2040',fontSize:11,textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
+        <a href="mailto:Support@Strat101.com" style={{color:'#FFFFFF',fontSize:11,textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
       </div>
     </div>
   );
