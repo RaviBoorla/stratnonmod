@@ -95,7 +95,7 @@ function BotPanel({ items }) {
   const isEmpty = messages.length === 0;
 
   return (
-    <div className="flex flex-col h-full" style={{ fontFamily:"system-ui,sans-serif", background:'#f1f5f9' }}>
+    <div className="flex flex-col h-full" style={{ fontFamily:"system-ui,sans-serif", background:'#192E49' }}>
       {/* Header bar — sky blue matching app header */}
       <div className="shrink-0 flex items-center justify-between px-5 py-3 border-b" style={{background:'#a3bbff',borderColor:'#7a9ee8'}}>
         <div className="flex items-center gap-3">
