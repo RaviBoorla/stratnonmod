@@ -777,7 +777,7 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
 
   return(
     <header ref={navRef} style={{
-      background:'#a3bbff',
+      background:'#192E49',
       borderBottom:'1px solid #7a9ee8',
       boxShadow:'0 1px 4px rgba(0,80,140,0.12)',
       flexShrink:0,
@@ -959,7 +959,7 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
 
       {/* Active page breadcrumb strip */}
       <div style={{
-        background:'#192E49',borderTop:'1px solid #7a9ee8',
+        background:'#192E49',borderTop:'1px solid #ffffff',
         padding:'3px 14px',display:'flex',alignItems:'center',gap:6,
       }}>
         <span style={{fontSize:11,color:'#0c3d6e'}}>Strat101.com</span>
