@@ -529,14 +529,14 @@ function AppMain({loggedUser}){
     setForm({...blank,_autoSave:true});
   };
 
+  {/* ── TOP NAV BAR ── */}
   return(
-    <div className="flex flex-col h-screen overflow-hidden" style={{fontFamily:'system-ui,sans-serif',fontSize:'13px',background:'#192E49'}}>
-      {/* ── TOP NAV BAR ── */}
+    <div className="flex flex-col h-screen overflow-hidden" style={{fontFamily:'system-ui,sans-serif',fontSize:'13px',background:'#ffffff'}}>
       <TopNav view={view} setView={goView} items={items} onNavItem={id=>{nav(id);}}
         onCreateNew={createAndOpen} workItemFilter={workItemFilter} setWorkItemFilter={setWIF}
         onNew={()=>isListView&&setForm(mkBlank(view,items))}/>
 
-      {/* ── MAIN CONTENT + DETAIL PANEL ── */}
+  {/* ── MAIN CONTENT + DETAIL PANEL ── */}
       <div className="flex flex-1 overflow-hidden relative">
         <div className="flex-1 flex flex-col min-w-0">
           <div className="flex-1 overflow-auto">
