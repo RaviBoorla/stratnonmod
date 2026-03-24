@@ -530,7 +530,7 @@ function AppMain({loggedUser}){
   };
 
   return(
-    <div className="flex flex-col h-screen overflow-hidden" style={{fontFamily:'system-ui,sans-serif',fontSize:'13px',background:'#f1f5f9'}}>
+    <div className="flex flex-col h-screen overflow-hidden" style={{fontFamily:'system-ui,sans-serif',fontSize:'13px',background:'#192E49'}}>
       {/* ── TOP NAV BAR ── */}
       <TopNav view={view} setView={goView} items={items} onNavItem={id=>{nav(id);}}
         onCreateNew={createAndOpen} workItemFilter={workItemFilter} setWorkItemFilter={setWIF}
@@ -567,9 +567,9 @@ function AppMain({loggedUser}){
       </div>
 
       {/* ── COPYRIGHT STRIP ── */}
-      <footer style={{background:'#a3bbff',borderTop:'1px solid #7a9ee8',padding:'3px 16px',display:'flex',alignItems:'center',justifyContent:'center',gap:12,flexShrink:0}}>
-        <span style={{fontSize:11,color:'#0c2d4a',letterSpacing:'0.02em'}}>
-          ®Strat101.com  |  ©Copyright 2026. All rights Reserved.  |  Contact: <a href="mailto:Support@Strat101.com" style={{color:'#0c2d4a',textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
+      <footer style={{background:'#192E49',borderTop:'1px solid #7a9ee8',padding:'3px 16px',display:'flex',alignItems:'center',justifyContent:'center',gap:12,flexShrink:0}}>
+        <span style={{fontSize:11,color:'#ffffff',letterSpacing:'0.02em'}}>
+          ®Strat101.com  |  ©Copyright 2026. All rights Reserved.  |  Contact: <a href="mailto:Support@Strat101.com" style={{color:'#ffffff',textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
         </span>
       </footer>
 
