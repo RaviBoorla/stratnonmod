@@ -325,7 +325,7 @@ function LoginScreen({onLogin}){
       fontFamily:'system-ui,sans-serif',
     }}>
       {/* Top bar */}
-      <div style={{padding:'18px 32px',display:'flex',alignItems:'center',gap:10,background:'#a3bbff',borderBottom:'1px solid #7a9ee8'}}>
+      <div style={{padding:'18px 32px',display:'flex',alignItems:'center',gap:10,background:'#192E49',borderBottom:'1px solid #7a9ee8'}}>
         <div style={{
           width:36,height:36,borderRadius:10,
           background:'linear-gradient(135deg,#2563eb,#4f46e5)',
