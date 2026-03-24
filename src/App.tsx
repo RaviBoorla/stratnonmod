@@ -333,7 +333,7 @@ function LoginScreen({onLogin}){
           color:'white',fontWeight:900,fontSize:14,boxShadow:'0 4px 12px rgba(37,99,235,0.5)',
         }}>SA</div>
         <div>
-          <div style={{color:'#FFFFFF',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
+          <div style={{color:'#FFFFFF',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>STRAT101.com</div>
           <div style={{color:'#FFFFFF',fontSize:9,letterSpacing:'0.1em',marginTop:2}}>ENABLING TRANSFORMATION JOURNEYS</div>
         </div>
       </div>
@@ -797,7 +797,7 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
             boxShadow:'0 2px 6px rgba(37,99,235,0.3)',
           }}>SA</div>
           {!isMobile&&<div>
-            <div style={{fontWeight:900,fontSize:14,color:'#ffffff',letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
+            <div style={{fontWeight:900,fontSize:14,color:'#ffffff',letterSpacing:'-0.3px',lineHeight:1}}>STRAT101.com</div>
             <div style={{fontSize:8,color:'#FFFFFF',letterSpacing:'0.04em',marginTop:1}}>ENABLING TRANSFORMATION JOURNEYS</div>
           </div>}
         </div>
@@ -2081,7 +2081,7 @@ function openPDF(result,rtype,grpBy){
     bodyHtml=`<h3 style="margin-bottom:16px;color:#374151">Grouped by: <em>${grpBy}</em> | Total: <strong>${result.total}</strong></h3><table style="width:100%"><tbody>${bars}</tbody></table>`;
   }
   const rtypeLabel=rtype==='list'?'📋 List Report':rtype==='count'?'🔢 Count Report':'📊 Histogram Report';
-  const html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>Strat101.com Report</title><style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;padding:32px;color:#1f2937}.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #87ceeb;padding-bottom:16px;margin-bottom:24px}.logo{font-size:22px;font-weight:900;color:#0c2d4a}.subtitle{font-size:13px;color:#6b7280;margin-top:4px}.meta{text-align:right;font-size:12px;color:#6b7280}.rtype{font-size:16px;font-weight:700;color:#111827;margin-bottom:20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-size:12px}th{background:#f0f9ff;font-weight:600;color:#0c2d4a;text-transform:uppercase;font-size:11px;letter-spacing:.04em}tr:nth-child(even)td{background:#f9fafb}.no-print{margin-top:24px;text-align:center}button{background:#0c2d4a;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600}button:hover{background:#1a5276}@media print{.no-print{display:none}body{padding:16px}}</style></head><body><div class="header"><div><div class="logo">SA Strat101.com</div><div class="subtitle">Strategy Execution · Report Export</div></div><div class="meta">Generated: ${new Date().toLocaleString()}</div></div><div class="rtype">${rtypeLabel}</div>${bodyHtml}<div class="no-print"><button onclick="window.print()">🖨️ Print / Save as PDF</button></div></body></html>`;
+  const html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>Strat101.com Report</title><style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;padding:32px;color:#1f2937}.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #87ceeb;padding-bottom:16px;margin-bottom:24px}.logo{font-size:22px;font-weight:900;color:#0c2d4a}.subtitle{font-size:13px;color:#6b7280;margin-top:4px}.meta{text-align:right;font-size:12px;color:#6b7280}.rtype{font-size:16px;font-weight:700;color:#111827;margin-bottom:20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-size:12px}th{background:#f0f9ff;font-weight:600;color:#0c2d4a;text-transform:uppercase;font-size:11px;letter-spacing:.04em}tr:nth-child(even)td{background:#f9fafb}.no-print{margin-top:24px;text-align:center}button{background:#0c2d4a;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600}button:hover{background:#1a5276}@media print{.no-print{display:none}body{padding:16px}}</style></head><body><div class="header"><div><div class="logo">SA STRAT101.com</div><div class="subtitle">Strategy Execution · Report Export</div></div><div class="meta">Generated: ${new Date().toLocaleString()}</div></div><div class="rtype">${rtypeLabel}</div>${bodyHtml}<div class="no-print"><button onclick="window.print()">🖨️ Print / Save as PDF</button></div></body></html>`;
   // Try popup first, fall back to data URI new tab
   const w=window.open('','_blank');
   if(w){w.document.write(html);w.document.close();}
