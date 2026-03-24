@@ -962,15 +962,15 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
         background:'#192E49',borderTop:'1px solid #ffffff',
         padding:'3px 14px',display:'flex',alignItems:'center',gap:6,
       }}>
-        <span style={{fontSize:11,color:'#0c3d6e'}}>Strat101.com</span>
-        <span style={{fontSize:11,color:'#0e5280'}}>›</span>
+        <span style={{fontSize:11,color:'#ffffff'}}>Strat101.com</span>
+        <span style={{fontSize:11,color:'#ffffff'}}>›</span>
         <span style={{fontSize:11,fontWeight:600,color:'#051e36'}}>
           {view==='kanban'?'🗂️ Kanban Board':view==='reports'?'📈 Report Builder':view==='bot'?'🤖 AI Assist':isWI?(workItemFilter==='all'?'📦 All Work Items':`${TC[workItemFilter]?.i} ${TC[workItemFilter]?.l}s`):`${TC[view]?.i} ${TC[view]?.l}s`}
         </span>
         {(isLV||isWI)&&(
           <>
-            <span style={{fontSize:11,color:'#0e5280'}}>·</span>
-            <span style={{fontSize:11,color:'#0c3d6e',fontWeight:500}}>
+            <span style={{fontSize:11,color:'#ffffff'}}>·</span>
+            <span style={{fontSize:11,color:'#ffffff',fontWeight:500}}>
               {isLV?items.filter(i=>i.type===view).length:workItemFilter==='all'?items.length:items.filter(i=>i.type===workItemFilter).length} items
             </span>
           </>
