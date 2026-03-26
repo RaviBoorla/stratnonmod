@@ -95,7 +95,7 @@ function BotPanel({ items }) {
   const isEmpty = messages.length === 0;
 
   return (
-    <div className="flex flex-col h-full" style={{ fontFamily:"system-ui,sans-serif", background:'#192E49' }}>
+    <div className="flex flex-col h-full" style={{ fontFamily:"system-ui,sans-serif", background:'#f1f5f9' }}>
       {/* Header bar — sky blue matching app header */}
       <div className="shrink-0 flex items-center justify-between px-5 py-3 border-b" style={{background:'#a3bbff',borderColor:'#7a9ee8'}}>
         <div className="flex items-center gap-3">
@@ -325,7 +325,7 @@ function LoginScreen({onLogin}){
       fontFamily:'system-ui,sans-serif',
     }}>
       {/* Top bar */}
-      <div style={{padding:'18px 32px',display:'flex',alignItems:'center',gap:10,background:'#192E49',borderBottom:'1px solid #7a9ee8'}}>
+      <div style={{padding:'18px 32px',display:'flex',alignItems:'center',gap:10,background:'#a3bbff',borderBottom:'1px solid #7a9ee8'}}>
         <div style={{
           width:36,height:36,borderRadius:10,
           background:'linear-gradient(135deg,#2563eb,#4f46e5)',
@@ -333,8 +333,8 @@ function LoginScreen({onLogin}){
           color:'white',fontWeight:900,fontSize:14,boxShadow:'0 4px 12px rgba(37,99,235,0.5)',
         }}>SA</div>
         <div>
-          <div style={{color:'#FFFFFF',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>STRAT101.com</div>
-          <div style={{color:'#FFFFFF',fontSize:9,letterSpacing:'0.1em',marginTop:2}}>ENABLING TRANSFORMATION JOURNEYS</div>
+          <div style={{color:'#0c2040',fontWeight:900,fontSize:18,letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
+          <div style={{color:'#1a3a6e',fontSize:9,letterSpacing:'0.1em',marginTop:2}}>ENABLING TRANSFORMATION</div>
         </div>
       </div>
 
@@ -446,12 +446,12 @@ function LoginScreen({onLogin}){
       </div>
 
       {/* Footer */}
-      <div style={{padding:'14px 32px',background:'#192E49',borderTop:'1px solid #7a9ee8',display:'flex',justifyContent:'center',alignItems:'center',gap:16}}>
-        <span style={{color:'#FFFFFF',fontSize:11,fontWeight:600}}>®Strat101.com</span>
+      <div style={{padding:'14px 32px',background:'#a3bbff',borderTop:'1px solid #7a9ee8',display:'flex',justifyContent:'center',alignItems:'center',gap:16}}>
+        <span style={{color:'#0c2040',fontSize:11,fontWeight:600}}>®Strat101.com</span>
         <span style={{color:'#4a6a9e'}}>|</span>
-        <span style={{color:'#FFFFFF',fontSize:11}}>©Copyright 2026. All rights Reserved.</span>
+        <span style={{color:'#0c2040',fontSize:11}}>©Copyright 2026. All rights Reserved.</span>
         <span style={{color:'#4a6a9e'}}>|</span>
-        <a href="mailto:Support@Strat101.com" style={{color:'#FFFFFF',fontSize:11,textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
+        <a href="mailto:Support@Strat101.com" style={{color:'#0c2040',fontSize:11,textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
       </div>
     </div>
   );
@@ -529,14 +529,14 @@ function AppMain({loggedUser}){
     setForm({...blank,_autoSave:true});
   };
 
-  {/* ── TOP NAV BAR ── */}
   return(
-    <div className="flex flex-col h-screen overflow-hidden" style={{fontFamily:'system-ui,sans-serif',fontSize:'13px',background:'#ffffff'}}>
+    <div className="flex flex-col h-screen overflow-hidden" style={{fontFamily:'system-ui,sans-serif',fontSize:'13px',background:'#f1f5f9'}}>
+      {/* ── TOP NAV BAR ── */}
       <TopNav view={view} setView={goView} items={items} onNavItem={id=>{nav(id);}}
         onCreateNew={createAndOpen} workItemFilter={workItemFilter} setWorkItemFilter={setWIF}
         onNew={()=>isListView&&setForm(mkBlank(view,items))}/>
 
-  {/* ── MAIN CONTENT + DETAIL PANEL ── */}
+      {/* ── MAIN CONTENT + DETAIL PANEL ── */}
       <div className="flex flex-1 overflow-hidden relative">
         <div className="flex-1 flex flex-col min-w-0">
           <div className="flex-1 overflow-auto">
@@ -567,9 +567,9 @@ function AppMain({loggedUser}){
       </div>
 
       {/* ── COPYRIGHT STRIP ── */}
-      <footer style={{background:'#192E49',borderTop:'1px solid #7a9ee8',padding:'3px 16px',display:'flex',alignItems:'center',justifyContent:'center',gap:12,flexShrink:0}}>
-        <span style={{fontSize:11,color:'#ffffff',letterSpacing:'0.02em'}}>
-          ®Strat101.com  |  ©Copyright 2026. All rights Reserved.  |  Contact: <a href="mailto:Support@Strat101.com" style={{color:'#ffffff',textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
+      <footer style={{background:'#a3bbff',borderTop:'1px solid #7a9ee8',padding:'3px 16px',display:'flex',alignItems:'center',justifyContent:'center',gap:12,flexShrink:0}}>
+        <span style={{fontSize:11,color:'#0c2d4a',letterSpacing:'0.02em'}}>
+          ®Strat101.com  |  ©Copyright 2026. All rights Reserved.  |  Contact: <a href="mailto:Support@Strat101.com" style={{color:'#0c2d4a',textDecoration:'none',fontWeight:600}}>Support@Strat101.com</a>
         </span>
       </footer>
 
@@ -777,7 +777,7 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
 
   return(
     <header ref={navRef} style={{
-      background:'#192E49',
+      background:'#a3bbff',
       borderBottom:'1px solid #7a9ee8',
       boxShadow:'0 1px 4px rgba(0,80,140,0.12)',
       flexShrink:0,
@@ -797,8 +797,8 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
             boxShadow:'0 2px 6px rgba(37,99,235,0.3)',
           }}>SA</div>
           {!isMobile&&<div>
-            <div style={{fontWeight:900,fontSize:14,color:'#ffffff',letterSpacing:'-0.3px',lineHeight:1}}>STRAT101.com</div>
-            <div style={{fontSize:8,color:'#FFFFFF',letterSpacing:'0.04em',marginTop:1}}>ENABLING TRANSFORMATION JOURNEYS</div>
+            <div style={{fontWeight:900,fontSize:14,color:'#0c2d4a',letterSpacing:'-0.3px',lineHeight:1}}>Strat101.com</div>
+            <div style={{fontSize:8,color:'#1a5276',letterSpacing:'0.04em',marginTop:1}}>ENABLING TRANSFORMATION</div>
           </div>}
         </div>
 
@@ -959,18 +959,18 @@ function TopNav({view,setView,items,onNavItem,onCreateNew,workItemFilter,setWork
 
       {/* Active page breadcrumb strip */}
       <div style={{
-        background:'#192E49',borderTop:'1px solid #ffffff',
+        background:'#8ca8f0',borderTop:'1px solid #7a9ee8',
         padding:'3px 14px',display:'flex',alignItems:'center',gap:6,
       }}>
-        <span style={{fontSize:11,color:'#ffffff'}}>Strat101.com</span>
-        <span style={{fontSize:11,color:'#ffffff'}}>›</span>
+        <span style={{fontSize:11,color:'#0c3d6e'}}>Strat101.com</span>
+        <span style={{fontSize:11,color:'#0e5280'}}>›</span>
         <span style={{fontSize:11,fontWeight:600,color:'#051e36'}}>
           {view==='kanban'?'🗂️ Kanban Board':view==='reports'?'📈 Report Builder':view==='bot'?'🤖 AI Assist':isWI?(workItemFilter==='all'?'📦 All Work Items':`${TC[workItemFilter]?.i} ${TC[workItemFilter]?.l}s`):`${TC[view]?.i} ${TC[view]?.l}s`}
         </span>
         {(isLV||isWI)&&(
           <>
-            <span style={{fontSize:11,color:'#ffffff'}}>·</span>
-            <span style={{fontSize:11,color:'#ffffff',fontWeight:500}}>
+            <span style={{fontSize:11,color:'#0e5280'}}>·</span>
+            <span style={{fontSize:11,color:'#0c3d6e',fontWeight:500}}>
               {isLV?items.filter(i=>i.type===view).length:workItemFilter==='all'?items.length:items.filter(i=>i.type===workItemFilter).length} items
             </span>
           </>
@@ -2081,7 +2081,7 @@ function openPDF(result,rtype,grpBy){
     bodyHtml=`<h3 style="margin-bottom:16px;color:#374151">Grouped by: <em>${grpBy}</em> | Total: <strong>${result.total}</strong></h3><table style="width:100%"><tbody>${bars}</tbody></table>`;
   }
   const rtypeLabel=rtype==='list'?'📋 List Report':rtype==='count'?'🔢 Count Report':'📊 Histogram Report';
-  const html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>Strat101.com Report</title><style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;padding:32px;color:#1f2937}.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #87ceeb;padding-bottom:16px;margin-bottom:24px}.logo{font-size:22px;font-weight:900;color:#0c2d4a}.subtitle{font-size:13px;color:#6b7280;margin-top:4px}.meta{text-align:right;font-size:12px;color:#6b7280}.rtype{font-size:16px;font-weight:700;color:#111827;margin-bottom:20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-size:12px}th{background:#f0f9ff;font-weight:600;color:#0c2d4a;text-transform:uppercase;font-size:11px;letter-spacing:.04em}tr:nth-child(even)td{background:#f9fafb}.no-print{margin-top:24px;text-align:center}button{background:#0c2d4a;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600}button:hover{background:#1a5276}@media print{.no-print{display:none}body{padding:16px}}</style></head><body><div class="header"><div><div class="logo">SA STRAT101.com</div><div class="subtitle">Strategy Execution · Report Export</div></div><div class="meta">Generated: ${new Date().toLocaleString()}</div></div><div class="rtype">${rtypeLabel}</div>${bodyHtml}<div class="no-print"><button onclick="window.print()">🖨️ Print / Save as PDF</button></div></body></html>`;
+  const html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>Strat101.com Report</title><style>*{box-sizing:border-box}body{font-family:system-ui,sans-serif;margin:0;padding:32px;color:#1f2937}.header{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #87ceeb;padding-bottom:16px;margin-bottom:24px}.logo{font-size:22px;font-weight:900;color:#0c2d4a}.subtitle{font-size:13px;color:#6b7280;margin-top:4px}.meta{text-align:right;font-size:12px;color:#6b7280}.rtype{font-size:16px;font-weight:700;color:#111827;margin-bottom:20px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:8px 12px;text-align:left;font-size:12px}th{background:#f0f9ff;font-weight:600;color:#0c2d4a;text-transform:uppercase;font-size:11px;letter-spacing:.04em}tr:nth-child(even)td{background:#f9fafb}.no-print{margin-top:24px;text-align:center}button{background:#0c2d4a;color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600}button:hover{background:#1a5276}@media print{.no-print{display:none}body{padding:16px}}</style></head><body><div class="header"><div><div class="logo">SA Strat101.com</div><div class="subtitle">Strategy Execution · Report Export</div></div><div class="meta">Generated: ${new Date().toLocaleString()}</div></div><div class="rtype">${rtypeLabel}</div>${bodyHtml}<div class="no-print"><button onclick="window.print()">🖨️ Print / Save as PDF</button></div></body></html>`;
   // Try popup first, fall back to data URI new tab
   const w=window.open('','_blank');
   if(w){w.document.write(html);w.document.close();}
